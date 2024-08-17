@@ -1,0 +1,128 @@
+:root {
+    font: bold 14px/1.4 'Poppins', Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #2d5b3e;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+a {
+font-weight: 500;
+color: #ffffff;
+text-decoration: inherit;
+}
+a:hover {
+color: #c1a187;
+}
+
+body {
+margin: 0;
+margin: 0;
+font: bold 14px/1.4 'Poppins', Arial, sans-serif;
+/* display: flex;
+place-items: center; */
+min-width: 320px;
+min-height: 100vh;
+scroll-behavior: smooth;
+}
+
+h1 {
+font-size: 3.2em;
+line-height: 1.1;
+}
+
+/* styling for buttons and locator search bar */
+
+.searchButtonsAndBar {
+/*    border: 2px solid #ddd; */
+    margin: 2em;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.filterButtons {
+    /* border: 2px solid #ddd; */
+    display: flex;
+    gap: 2.5em;
+}
+
+.locatorSearchBar {
+    margin: 2px;
+    padding: 10px 20px;
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 35px; /* Fully rounded corners */
+    outline: none; /* Removes default focus outline */
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #2c2c2c;
+    width: 300px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.locatorSearchBar:focus,
+.locatorSearchBar:hover {
+    border-color: #c1a187; /* Change border color on focus */
+    box-shadow: 0 0 10px #c1a187; /* Add a subtle shadow on focus */
+}
+
+.locatorSearchBar::placeholder {
+color: #aaa; /* Light gray color for placeholder text */
+font-style: italic; /* Italicize the placeholder text */
+}
+
+button { 
+border-radius: 8px;
+border: 1px solid transparent;
+padding: 0.6em 1.2em;
+font-size: 1em;
+font-weight: 500;
+font-family: inherit;
+/*  background-color: #1a1a1a;*/
+cursor: pointer;
+transition: border-color 0.25s;
+}
+
+button:hover {
+border-color: #c1a187;
+}
+
+button:focus,
+button:focus-visible { 
+outline: 4px auto -webkit-focus-ring-color;
+}
+
+input[type="checkbox"] {
+    accent-color: #c1a187; /* Modern browsers support accent-color property */
+}
+ 
+/* map styling */
+.map {
+border-radius: 12px;
+margin: 2em;
+/*  padding: 2em;*/
+border: 4px solid whitesmoke;
+display: flex;
+justify-content: end;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #2d5b3e;
+    }
+    a:hover {
+        color: #c1a187;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+}
+  
