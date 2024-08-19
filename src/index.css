@@ -4,7 +4,7 @@
     font-weight: 400;
   
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
+    color: c1a187;
     background-color: #2d5b3e;
   
     font-synthesis: none;
@@ -18,12 +18,12 @@ font-weight: 500;
 color: #ffffff;
 text-decoration: inherit;
 }
+
 a:hover {
 color: #c1a187;
 }
 
 body {
-margin: 0;
 margin: 0;
 font: bold 14px/1.4 'Poppins', Arial, sans-serif;
 /* display: flex;
@@ -42,7 +42,8 @@ line-height: 1.1;
 
 .searchButtonsAndBar {
 /*    border: 2px solid #ddd; */
-    margin: 2em;
+    margin: 1.5em;
+    margin-bottom:  0;
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -56,7 +57,8 @@ line-height: 1.1;
 
 .locatorSearchBar {
     margin: 2px;
-    padding: 10px 20px;
+    margin-top:21px;
+    padding: 10px;
     border: 2px solid #ddd; /* Light gray border */
     border-radius: 35px; /* Fully rounded corners */
     outline: none; /* Removes default focus outline */
@@ -79,39 +81,42 @@ font-style: italic; /* Italicize the placeholder text */
 }
 
 button { 
-border-radius: 8px;
+/*border-radius: 8px;
 border: 1px solid transparent;
 padding: 0.6em 1.2em;
 font-size: 1em;
 font-weight: 500;
-font-family: inherit;
+font-family: inherit;*/
 /*  background-color: #1a1a1a;*/
-cursor: pointer;
-transition: border-color 0.25s;
+/*cursor: pointer;
+transition: border-color 0.25s;*/
 }
 
-button:hover {
+/*button:hover {
 border-color: #c1a187;
-}
+}*/
 
-button:focus,
+/*button:focus,
 button:focus-visible { 
 outline: 4px auto -webkit-focus-ring-color;
-}
+}*/
 
 input[type="checkbox"] {
     accent-color: #c1a187; /* Modern browsers support accent-color property */
+    margin-right: 5px;
 }
  
 /* map styling */
 .map {
 border-radius: 12px;
 margin: 2em;
-/*  padding: 2em;*/
+margin-top: 0;
 border: 4px solid whitesmoke;
 display: flex;
 justify-content: end;
 }
+
+
 
 @media (prefers-color-scheme: light) {
     :root {

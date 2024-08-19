@@ -43,6 +43,7 @@ nav ul li {
 
 a {
     color: var(--clr-light-gray);
+    font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
@@ -127,3 +128,4 @@ a:hover:after {
         color: var(--clr-light-gray);
     }
 }
+

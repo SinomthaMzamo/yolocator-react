@@ -32,7 +32,8 @@ body, html {
     flex-direction: column;
     flex: wrap;
     justify-content: space-between;
-    padding: 2em;
+    padding: 0;
+    padding-top:2em;
     font-size: 2em;
     color: var(--clr-dark-gray)
 }
@@ -46,27 +47,44 @@ body, html {
     color: var(--clr-light-gray);
 }
 
-.aboutMessage{
+.aboutMessage {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(auto, 25em) 1fr;
+    font-weight: 800;
+    font-size: x-large;
+    gap: 2em;
+    border: 0;
+    /* justify-content: space-between; */
 }
 
 .sectionN{
-    margin-top: 1em;
+    border: none;
+    margin-top: 0;
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.boldface {
+.boldfaceSubtitle {
+    /* margin-right: 0; */
     /* border: 2px solid white; */
     font-weight: 800;
+    color: #c1a187;
     text-transform: none;
-    margin-right: 5px;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    font-size: xx-large;
 }
 
 .featureName{
-    font-weight: 300;
-    text-decoration: underline;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.featureDescription{
+/*    border: 2px solid wheat;*/
+    font-weight: 500;
 }

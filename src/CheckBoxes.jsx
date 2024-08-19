@@ -8,14 +8,19 @@ const CheckBoxes = ({titles}) => {
         justifyContent: 'start',
         gap: '2em',
         margin: '2em',
-        color: '#1e1e1e',
+        color: '#121212',
     }
 
     return (
     <>
         <div style={checkBoxesStyle}>
             {titles.map((title) => (
-                <label key={title}>
+                <label style ={{
+                    display: "block",
+                    marginBottom: "10px",
+                    fontWeight: "500",
+                    color: "seashell",
+                }} key={title}>
                    <input type="checkbox" value={title}/>
                    {title} 
                 </label>

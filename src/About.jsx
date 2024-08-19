@@ -11,11 +11,11 @@ const About = ({featureName, subtitle, featureDescription, art:ArtComponent}) =>
                     <p className="featureName">{featureName}</p>
                 </div>
                 <div className="sectionN">
-                    <div className="heading">
-                        <p className="boldface">{subtitle}</p>
+                    <div className="heading" style={{border: "none", padding: "0"}}>
+                        <h2 className="boldfaceSubtitle">{subtitle}</h2>
                     </div>
                     <div className="aboutMessage">
-                        <p>{featureDescription}</p>
+                        <p className="featureDescription">{featureDescription}</p>
                         <ArtComponent></ArtComponent>
                     </div>
                 </div>

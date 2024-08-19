@@ -22,14 +22,14 @@ const Button = ({ text, idleColour, hoverColour, textColour, onClick}) => {
         backgroundColor: isHovered ? hoverColour : idleColour,
         border: '2px solid ' + (isHovered ? hoverColour : idleColour),
         color: textColour,
-        padding: '10px 20px',
+        padding: '10px',
         cursor: 'pointer',
         transition: 'border-color, color 0.3s ease', /* Smooth transition for border color */
         boxShadow: '2px 2px 5px #2c2c2c' , /* Add a subtle shadow on focus */ 
 
     }
-   3
-    
+
+   
     return (
         <button
          className='filterBtn'

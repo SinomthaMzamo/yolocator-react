@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import  {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './NavBar.css'
 
@@ -9,7 +10,7 @@ const NavBar  = ({feature, features}) => {
             <input type="checkbox" id="menu-toggle"></input>
             <label htmlFor="menu-toggle" className="hamburger">&#9776;</label>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><Link to="/home">Home</Link></li>
                 <li><a href="#about">About</a></li>
                 <li className="dropdown">
                     <a href="#news">News</a>
@@ -22,7 +23,7 @@ const NavBar  = ({feature, features}) => {
                     <a href="#features">{feature}</a>
                     <ul className="dropdown-content" id="feature-links">
                         {features.map((aFeature) => (
-                            <li key={aFeature}><a href="">{aFeature}</a></li>
+                            <li key={aFeature}><Link to={"/"+aFeature}>{aFeature}</Link></li>
                         ))}
                     </ul>
                 </li>
